@@ -1,31 +1,40 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #213249;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.combined-profile-container {
+  inline-size: 100%;
+  max-inline-size: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  inline-size: 150px;
+  block-size: 150px;
+  border-radius: 50%;
+  margin-block-end: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile, .about {
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.profile h1, .about h3 {
+  font-size: 24px;
+  color: #333;
+  margin-block-start: 0;
 }
 
-.heart {
-  color: #ff0000;
-}
-
-.small {
-  font-size: 0.75rem;
+.about h3 {
+  font-size: 18px;
+  margin-block-end: 10px;
 }
